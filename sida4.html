@@ -1,0 +1,57 @@
+<!Doctype html>
+<html lang="sv">
+         <head>
+                 <title>SL appen</title>
+                 <link rel="stylesheet" type="text/css" href="design.css"/>
+         </head>
+         <body class="background3">
+                <h1>Nästa avgång</h1>
+          <div class="header">
+         <nav>
+                <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="sida4.html">Nästa avgång</a></li>
+                <li><a href="sida5.html">Klockan</a></li>
+                </ul>
+         </nav>
+         <h2>Hållplats Slussen</h2>
+         <ul id="departures" class="departures"></ul>
+         <script>
+         
+       function createNode(element) {
+         return document.createElement(element);
+       }
+   
+       function append(parent, el) {
+         return parent.appendChild(el);
+       }
+   
+       const ul = document.getElementById('departures');
+       const url = 'https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesV4.json?key=f1b7512b0672495d93ef0037f5f1b297&siteid=9192&timewindow=2';
+       fetch(url)
+         .then((resp) => resp.json())
+         .then(function (data) {
+           let departures = data.ResponseData.Metros;
+           return departures.map(function (departure) {
+             let li = createNode('li'),
+               img = createNode('img'),
+               span = createNode('span');
+   
+             span.innerHTML = `${"Nästa avgång"+ "-"+departure.GroupOfLine + ":" +  departure.DisplayTime + "<br>" }`;
+             append(li, img);
+             append(li, span);
+             append(ul, li);
+           })
+         })
+         .catch(function (error) {
+           console.log(error);
+         });</script></div>
+         
+     <br/>
+     
+                <div class="footer">
+                       <div class="innerbox">&copy; 2018 Copyright</div>
+                </div>       
+         </body>
+          
+</html>

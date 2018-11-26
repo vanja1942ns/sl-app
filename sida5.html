@@ -1,0 +1,56 @@
+<!Doctype html>
+<html lang="sv">
+         <head>
+     
+                 <title>SL appen</title>
+                 <link rel="stylesheet" type="text/css" href="design.css"/>
+         </head>
+         <body class="background3">
+                <h1>Klockan</h1>
+        <div class="header">
+         <nav>
+                <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="sida4.html">Nästa avgång</a></li>
+                <li><a href="sida5.html">Klockan</a></li>
+                </ul>
+         </nav>
+         <p id="demo"></p>
+
+         <script>
+             function klocka(){
+         
+             
+          var d=new Date();
+          var timme = d.getHours(); 
+          var minut = d. getMinutes(); 
+          var sekund = d.getSeconds();
+         
+           if(sekund<=9){
+               sekund ="0" + sekund;
+           }
+           if(minut<=9){
+               minut ="0" + minut;
+           }
+           if(timme<=9){
+               timme ="0" + timme;
+           }
+                 document.getElementById("timme1").innerHTML = timme;
+                 document.getElementById("minut1").innerHTML = minut;
+                 document.getElementById("sekund1").innerHTML = sekund;
+         }
+         </script></header>
+         <body onload="klocka(); setInterval('klocka()', 1000 )">
+            <div class="klocka">
+                <span id="timme1" ></span>
+                <span id="minut1" ></span>
+                <span id="sekund1"></span></div> 
+                
+         </body>
+     </div><br/>
+                <div class="text5"></div>
+                <div class="footer">
+                        <div class="innerbox">&copy; 2018 Copyright</div>
+                 </div>
+         </body>
+</html>

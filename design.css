@@ -1,0 +1,43 @@
+body {background-color: rgb(255, 255, 255);}
+h1 {   color:rgba(0, 0, 0, 0.959);
+       text-align:center;
+       font-size: 25px; font-family: 'Lobster', cursive;} 
+       h2 {   color:rgba(0, 0, 0, 0.959);
+            text-align:center;
+            font-size: 30px; font-family: 'Lobster', cursive;}    
+.header1{text-align: center;
+         font-size: 50px;font-family: 'Lobster', cursive;height: 10vh}
+.footer {position:fixed;left: 0;bottom: 0;width: 100%;color: black;font-family: 'Noto Serif JP', sans-serif;
+    text-align: center;background-color: beige;}
+.text3{background-color: beige;
+      color:rgb(0, 0, 0);text-align: center;
+      height:auto; width:15%;padding: 5px;
+      margin-left: 43%;
+      font-family: 'Noto Serif JP', sans-serif;} 
+      
+ul{    list-style-type: none; 
+       margin: 0px;background-color: beige;
+       padding: 0px;
+       text-align:center;
+       font-family: 'Noto Serif JP', sans-serif; }
+ul li{ display:inline; 
+       padding:10px;}
+ul a{  display:inline block;
+       padding:10px;}
+li a { display: inline-block;
+       color:rgb(0, 0, 0); 
+       text-decoration: none;
+       text-align:center;}
+li{   display:inline-block;
+      padding:1%;}
+li a:hover {background-color:rgb(255, 255, 255);}
+.ulica{color:rgb(141, 28, 28);
+      text-align: justify;
+      height:auto; width:60%;
+      background-color:beige;
+      margin-left: 20%;
+      text-align:center;font-family: 'Noto Serif JP', sans-serif;}      
+.background3{background: url(train1.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;}    
+.departures{text-align: center;background-color: brown;font-size: 30px;}                                                                                                                                                            
