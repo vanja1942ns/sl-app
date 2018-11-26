@@ -6,11 +6,11 @@ h1 {   color:rgba(0, 0, 0, 0.959);
             text-align:center;
             font-size: 30px; font-family: 'Lobster', cursive;}    
 .header1{text-align: center;
-       .klocka{color: rgb(255, 255, 255);font-size: 60px;margin-top: 10px;
-                position: absolute;margin-left:0;}        
          font-size: 50px;font-family: 'Lobster', cursive;height: 10vh}
 .footer {position:fixed;left: 0;bottom: 0;width: 100%;color: black;font-family: 'Noto Serif JP', sans-serif;
     text-align: center;background-color: beige;}
+.klocka{color: rgb(255, 255, 255);font-size: 60px;margin-top: 10px;
+                position: absolute;margin-left:0;}        
 .text3{background-color: beige;
       color:rgb(0, 0, 0);text-align: center;
       height:auto; width:15%;padding: 5px;
